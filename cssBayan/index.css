@@ -23,11 +23,12 @@
 }
 
 .content {
-  max-width: 1024px;
+  max-width: 80vw;
   min-height: 100vh;
   margin: auto;
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
+  font-size: 62.5%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -39,11 +40,11 @@
 .title {
   margin: 0 auto;
   width: 80%;
-  padding: 40px 0 20px;
-  font-size: 54px;
+  padding: 4rem 0 2rem;
+  font-size: 5.4em;
   line-height: 1.07;
   font-weight: 900;
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 0.1rem solid #c0c0c0;
 }
 
 .bayan-container {
@@ -63,17 +64,17 @@
 }
 
 .bayan-item__input {
-  width: 1px;
-  height: 1px;
+  width: 0.01%;
+  height: 0.01%;
   opacity: 0;
 }
 
 .bayan-item__trigger {
   display: grid;
   grid-template-rows: repeat(2, auto);
-  row-gap: 15px;
-  height: 50px;
-  border-bottom: 1px solid #c0c0c0;
+  row-gap: 1.5em;
+  height: 4.5em;
+  border-bottom: 0.1em solid #c0c0c0;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -81,12 +82,11 @@
 
 .bayan-item__text {
   margin: 0;
-  padding: 5px 5px 0;
   max-width: 85%;
   grid-row: 1;
   grid-column: 1;
   justify-self: start;
-  font-size: 30px;
+  font-size: 3em;
   line-height: 1.2;
   font-weight: 500;
   text-overflow: ellipsis;
@@ -95,16 +95,16 @@
 }
 
 .bayan-item__meme {
-  width: 400px;
+  width: 40em;
   aspect-ratio: 1/1;
   grid-row: 2;
   justify-self: center;
 }
 
 .bayan-item__arrow {
-  margin: 10px 5px 0;
-  width: 25px;
-  height: 30px;
+  margin: 0.2% 0.1% 0;
+  width: 2.5em;
+  height: 3em;
   background-image: url('./images/arrow-down-solid.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@
 }
 
 .bayan-item__input:checked + .bayan-item__trigger {
-  height: 450px;
+  height: 45em;
   color: #000;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .bayan-item__trigger:hover {
-  height: 450px;
+  height: 45em;
   transition: all 0.3s ease;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .footer {
-  height: 300px;
+  height: 10vh;
   display: block;
 }
 
@@ -153,20 +153,21 @@
 
 @media screen and (max-width: 820px) {
   .title {
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 1.09;
   }
 }
 
 @media screen and (max-width: 424px) {
   .title {
-    font-size: 22px;
+    font-size: 2.2rem;
+    padding: 1.5rem 0 0.5rem;
   }
 }
 
 @media screen and (max-width: 820px) {
   .bayan-item__text {
-    font-size: 24px;
+    font-size: 2.4em;
     line-height: 1.1;
     padding: 0;
   }
@@ -174,62 +175,55 @@
 
 @media screen and (max-width: 424px) {
   .bayan-item__text {
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1.4;
   }
 }
 
 @media screen and (max-width: 820px) {
   .bayan-item__arrow {
-    margin: 5px 5px 0;
-    width: 15px;
-    height: 20px;
+    margin: 0.5em 0.5em 0;
+    width: 1.5em;
+    height: 2em;
   }
 }
 
 @media screen and (max-width: 424px) {
   .bayan-item__arrow {
-    margin: 5px 5px 0;
-    width: 12px;
-    height: 15px;
+    width: 1.2em;
+    height: 1.5em;
   }
 }
 
 @media screen and (max-width: 820px) {
   .bayan-item__meme {
-    width: 380px;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bayan-item__meme {
-    width: 250px;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 820px) {
   .bayan-item__trigger {
-    height: 40px;
+    height: 4em;
   }
 
   .bayan-item__input:checked + .bayan-item__trigger {
-    height: 450px;
+    height: 50em;
   }
 }
 
 @media screen and (max-width: 480px) {
   .bayan-item__trigger {
-    height: 30px;
-    row-gap: 10px;
+    height: 3em;
+    row-gap: 1em;
   }
 
   .bayan-item__input:checked + .bayan-item__trigger {
-    height: 280px;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .footer {
-    height: 50px;
+    height: 30em;
   }
 }
